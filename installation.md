@@ -18,7 +18,7 @@
 - PHP_CURL Module Enable
 
 
-> {note} On this projects, I use the latest Laravel version (currently 5.4). Please go to [Laravel documentation page](https://laravel.com/docs) for more information.
+> On this projects, I use the latest Laravel version (currently 5.4). Please go to [Laravel documentation page](https://laravel.com/docs) for more information.
 
 <a name="installation"></a>
 ## Installation
@@ -37,7 +37,7 @@
 * Chmod 777 for `install.sh`
 * Run file `./install.sh`
 
-> {tip} For Linux users
+> For Linux users
     
     If you got this error /usr/bin/env: ‘bash\r’: No such file or directory"
     Please run `sed $'s/\r$//' ./install.sh > ./install.Unix.sh` 

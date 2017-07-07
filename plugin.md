@@ -13,7 +13,7 @@
 
      php artisan plugin:create <plugin name>
 
-> {video} You can see more detail here: https://www.youtube.com/watch?v=8F4wfrS9svs
+> You can see more detail here: https://www.youtube.com/watch?v=8F4wfrS9svs
 
 <a name="activate-plugin"></a>
 ## Activate a plugin
@@ -33,7 +33,7 @@
 
     php artisan cms:remove demo
 
-> {note} `demo` is a plugin
+> `demo` is a plugin
 
 When you run this command. It will do:
 
@@ -43,4 +43,4 @@ When you run this command. It will do:
 
 + Delete folder demo in `/plugins` and delete `/plugins` directory if it's empty
 
-> {video} See video for more detail: [Delete a plugin](https://www.youtube.com/watch?v=jmex2G4eC18)
+> See video for more detail: [Delete a plugin](https://www.youtube.com/watch?v=jmex2G4eC18)
