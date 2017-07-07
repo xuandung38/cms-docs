@@ -1,0 +1,28 @@
+- Overview
+    - [Overview](/v/{{version}}/overview)
+    - [Screenshots](/v/{{version}}/screenshots)
+- Prologue
+    - [Release Notes](/v/{{version}}/releases)
+    - [Upgrade Guide](/v/{{version}}/upgrade)
+- Getting Started
+    - [Installation](/v/{{version}}/installation)
+    - [Virtual host](/v/{{version}}/virtualhost)
+- Packages
+    - [List packages](/v/{{version}}/packages)
+    - [Google Analytics](/v/{{version}}/analytics)
+- Plugin development
+    - [Commands](/v/{{version}}/plugin)
+- Theme development
+    - [Overview](/v/{{version}}/theme)
+    - [Assets](/v/{{version}}/theme-assets)
+    - [Breadcrumb](/v/{{version}}/theme-breadcrumb)
+    - [Widget](/v/{{version}}/theme-widget)
+    - [MVC Pattern](/v/{{version}}/theme-mvc-pattern)
+    - [Theme options](/v/{{version}}/theme-options)
+    
+- Core
+    - [Filters](/v/{{version}}/filters)
+    - [Actions](/v/{{version}}/actions)
+    - [Shortcode](/v/{{version}}/shortcode)
+    - [Meta box](/v/{{version}}/meta_box)
+    - [Mail](/v/{{version}}/mail)
