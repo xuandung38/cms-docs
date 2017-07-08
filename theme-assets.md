@@ -8,61 +8,67 @@
 
 Add assets in your route.
 
-    // path: public/css/style.css
-    $theme->asset()->add('core-style', 'css/style.css');
+```php
+// path: public/css/style.css
+$theme->asset()->add('core-style', 'css/style.css');
+
+// path: public/js/script.css
+$theme->asset()->container('footer')->add('core-script', 'js/script.js');
+
+// path: public/themes/[current theme]/assets/css/custom.css
+// This case has dependency with "core-style".
+$theme->asset()->usePath()->add('custom', 'css/custom.css', array('core-style'));
+
+// path: public/themes/[current theme]/assets/js/custom.js
+// This case has dependency with "core-script".
+$theme->asset()->container('footer')->usePath()->add('custom', 'js/custom.js', array('core-script'));
+```
     
-    // path: public/js/script.css
-    $theme->asset()->container('footer')->add('core-script', 'js/script.js');
-    
-    // path: public/themes/[current theme]/assets/css/custom.css
-    // This case has dependency with "core-style".
-    $theme->asset()->usePath()->add('custom', 'css/custom.css', array('core-style'));
-    
-    // path: public/themes/[current theme]/assets/js/custom.js
-    // This case has dependency with "core-script".
-    $theme->asset()->container('footer')->usePath()->add('custom', 'js/custom.js', array('core-script'));
-    
-> You can force use theme to look up existing theme by passing parameter to method:
-> $theme->asset()->usePath('default')
+> {info} You can force use theme to look up existing theme by passing parameter to method: $theme->asset()->usePath('default')
 
 Writing in-line style or script.
 
+```php
+// Dependency with.
+$dependencies = array();
 
-    // Dependency with.
-    $dependencies = array();
-    
-    // Writing an in-line script.
-    $theme->asset()->writeScript('inline-script', '
+// Writing an in-line script.
+$theme->asset()->writeScript('inline-script', '
+    $(function() {
+        console.log("Running");
+    })
+', $dependencies);
+
+// Writing an in-line style.
+$theme->asset()->writeStyle('inline-style', '
+    h1 { font-size: 0.9em; }
+', $dependencies);
+
+// Writing an in-line script, style without tag wrapper.
+$theme->asset()->writeContent('custom-inline-script', '
+    <script>
         $(function() {
             console.log("Running");
-        })
-    ', $dependencies);
-    
-    // Writing an in-line style.
-    $theme->asset()->writeStyle('inline-style', '
-        h1 { font-size: 0.9em; }
-    ', $dependencies);
-    
-    // Writing an in-line script, style without tag wrapper.
-    $theme->asset()->writeContent('custom-inline-script', '
-        <script>
-            $(function() {
-                console.log("Running");
-            });
-        </script>
-    ', $dependencies);
+        });
+    </script>
+', $dependencies);
+```
 
 Render styles and scripts in your layout.
 
-    // Without container
-    echo Theme::asset()->styles();
-    
-    // With "footer" container
-    echo Theme::asset()->container('footer')->scripts();
+```php
+// Without container
+echo Theme::asset()->styles();
+
+// With "footer" container
+echo Theme::asset()->container('footer')->scripts();
+```
 
 Direct path to theme asset.
 
-    echo Theme::asset()->url('img/image.png');
+```php
+echo Theme::asset()->url('img/image.png');
+```
 
 <a name="preparing-group-of-assets"></a>
 ## Preparing group of assets.
@@ -71,46 +77,54 @@ Some assets you don't want to add on a page right now, but you still need them s
 
 Cook your assets.
 
-    Theme::asset()->cook('backbone', function($asset) {
-        $asset->add('backbone', '//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js');
-        $asset->add('underscorejs', '//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js');
-    });
+```php
+Theme::asset()->cook('backbone', function($asset) {
+    $asset->add('backbone', '//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js');
+    $asset->add('underscorejs', '//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js');
+});
+```
 
 You can prepare on a global in package config.
 
-    // Location: config/theme/config.php
+```php
+// Location: config/theme/config.php
+....
+'events' => array(
+
     ....
-        'events' => array(
-    
-            ....
-    
-            // This event will fire as a global you can add any assets you want here.
-            'asset' => function($asset)
-            {
-                // Preparing asset you need to serve after.
-                $asset->cook('backbone', function($asset)
-                {
-                    $asset->add('backbone', '//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js');
-                    $asset->add('underscorejs', '//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js');
-                });
-            }
-    
-        )
-    ....
+
+    // This event will fire as a global you can add any assets you want here.
+    'asset' => function($asset)
+    {
+        // Preparing asset you need to serve after.
+        $asset->cook('backbone', function($asset)
+        {
+            $asset->add('backbone', '//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js');
+            $asset->add('underscorejs', '//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js');
+        });
+    }
+
+)
+....
+```
 
 Serve theme when you need.
 
-    // At the controller.
-    Theme::asset()->serve('backbone');
+```php
+// At the controller.
+Theme::asset()->serve('backbone');
+```
 
 
 Then you can get output.
     
-    ...
-    <head>
-        <?php echo Theme::asset()->scripts(); ?>
-        <?php echo Theme::asset()->styles(); ?>
-        <?php echo Theme::asset()->container('YOUR_CONTAINER')->scripts(); ?>
-        <?php echo Theme::asset()->container('YOUR_CONTAINER')->styles(); ?>
-    </head>
-    ...
+```php
+...
+<head>
+    <?php echo Theme::asset()->scripts(); ?>
+    <?php echo Theme::asset()->styles(); ?>
+    <?php echo Theme::asset()->container('YOUR_CONTAINER')->scripts(); ?>
+    <?php echo Theme::asset()->container('YOUR_CONTAINER')->styles(); ?>
+</head>
+...
+```

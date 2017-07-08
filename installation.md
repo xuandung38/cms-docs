@@ -18,7 +18,7 @@
 - PHP_CURL Module Enable
 
 
-> On this projects, I use the latest Laravel version (currently 5.4). Please go to [Laravel documentation page](https://laravel.com/docs) for more information.
+>  {warning} On this projects, I use the latest Laravel version (currently 5.4). Please go to [Laravel documentation page](https://laravel.com/docs) for more information.
 
 <a name="installation"></a>
 ## Installation
@@ -37,13 +37,11 @@
 * Chmod 777 for `install.sh`
 * Run file `./install.sh`
 
-> For Linux users
-    
-    If you got this error /usr/bin/env: ‘bash\r’: No such file or directory"
-    Please run `sed $'s/\r$//' ./install.sh > ./install.Unix.sh` 
-    and use ./install.Unix.sh to install
-    If you got this error "bash: ./install.sh: Permission denied"
-    Please run `sudo chmod 777 -R install.sh` to make sure this file has permission to execute
+> {notice} For Linux users <br />
+If you got this error /usr/bin/env: ‘bash\r’: No such file or directory" <br />
+Please run `sed $'s/\r$//' ./install.sh > ./install.Unix.sh` and use ./install.Unix.sh to install <br />
+If you got this error "bash: ./install.sh: Permission denied" <br />
+Please run `sudo chmod 777 -R install.sh` to make sure this file has permission to execute.
 
 <a name="note"></a>
 ## Note

@@ -7,7 +7,7 @@
     - [Description](#apply_action_description)
     - [Parameters](#apply_action_parameters)
     
-This concept based on Wordpress hook functions.
+This concept is based on Wordpress hook functions.
 
 <a name="add_action"></a>
 ## add_action()
@@ -16,7 +16,9 @@ This concept based on Wordpress hook functions.
 
 Function: Hooks a function on to a specific action.
 
-    add_action(string $tag, callable $function_to_add, int $priority = 10, int $accepted_args = 1)
+```php
+add_action(string $tag, callable $function_to_add, int $priority = 10, int $accepted_args = 1)
+```
     
 <a name="add_action_description"></a>
 ### Description
@@ -48,7 +50,9 @@ Lower numbers correspond with earlier execution, and functions with the same pri
 
 Function: Execute functions hooked on a specific action hook.
 
-    do_action(string $tag,  $arg = '')
+```php
+do_action(string $tag,  $arg = '')
+```
     
 <a name="add_action_description"></a>
 ### Description

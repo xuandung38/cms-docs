@@ -38,15 +38,15 @@ Password: `159357`
 
 Install Botble version 2.0
 
-> [https://www.youtube.com/watch?v=DAZe2V_A0wo](https://www.youtube.com/watch?v=DAZe2V_A0wo)
+> {info} [https://www.youtube.com/watch?v=DAZe2V_A0wo](https://www.youtube.com/watch?v=DAZe2V_A0wo)
 
 Create a custom module with CRUD and permissions
 
-> [https://www.youtube.com/watch?v=8F4wfrS9svs](https://www.youtube.com/watch?v=8F4wfrS9svs)
+> {info} [https://www.youtube.com/watch?v=8F4wfrS9svs](https://www.youtube.com/watch?v=8F4wfrS9svs)
 
 Remove a module
 
-> [https://www.youtube.com/watch?v=jmex2G4eC18](https://www.youtube.com/watch?v=jmex2G4eC18)
+> {info} [https://www.youtube.com/watch?v=jmex2G4eC18](https://www.youtube.com/watch?v=jmex2G4eC18)
 
 <a name="why_choose_us"></a>
 ## Why choose us

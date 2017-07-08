@@ -16,7 +16,17 @@ This concept based on Wordpress functions.
 
 Function: Adds a meta box to one or more screens.
 
-    add_meta_box(string $id, string $title, callable $callback, string $screen = null, string $context = 'advanced', string $priority = 'default', array $callback_args = null )
+```php
+add_meta_box(
+    string $id, 
+    string $title, 
+    callable $callback, 
+    string $screen = null, 
+    string $context = 'advanced', 
+    string $priority = 'default', 
+    array $callback_args = null
+);
+```
     
 <a name="add_meta_box_description"></a>
 ### Description
@@ -57,7 +67,9 @@ Function: Adds a meta box to one or more screens.
 
 Function: Meta-Box template function
 
-    do_meta_boxes(string $screen, string $context, mixed $object)
+```php
+do_meta_boxes(string $screen, string $context, mixed $object)
+```
     
 <a name="do_meta_boxes_description"></a>
 ### Description

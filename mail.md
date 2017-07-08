@@ -6,26 +6,32 @@
 <a name="send_mail"></a>
 ## Send mail
 
-    EmailHandler::send(string $content, string $title, ['name' => string $reciever_name, 'to' => string $reciever_email]);
+```php
+EmailHandler::send(string $content, string $title, ['name' => string $reciever_name, 'to' => string $reciever_email]);
+```
 
 Ex:
 
-    EmailHandler::send('Hello there', 'Test email', ['name' => 'Sang Nguyen', 'to' => 'sangit7b@gmail.com']);
+```php
+EmailHandler::send('Hello there', 'Test email', ['name' => 'Sang Nguyen', 'to' => 'sangit7b@gmail.com']);
+```
     
 Email content with parameters: `core/acl/src/Http/Controllers/AuthController.php:151`
 
-    $data = [
-        'user' => $user->username,
-        'token' => $reminder->code,
-        'name' => $user->getFullName(),
-        'email' => $user->email,
-    ];
-    
-    EmailHandler::send(
-        view('acl::emails.reminder', $data)->render(), 
-        trans('acl::auth.email.invite.title'),
-        ['name' => $user->getFullName(), 'to' => $user->email]
-    );
+```php
+$data = [
+    'user' => $user->username,
+    'token' => $reminder->code,
+    'name' => $user->getFullName(),
+    'email' => $user->email,
+];
+
+EmailHandler::send(
+    view('acl::emails.reminder', $data)->render(), 
+    trans('acl::auth.email.invite.title'),
+    ['name' => $user->getFullName(), 'to' => $user->email]
+);
+```
     
 <a name="email_template"></a>
 ## Email template
@@ -36,8 +42,12 @@ The email template is located in `core/base/resources/views/system/email.blade.p
 
 To use custom email template:
 
-    EmailHandler::setEmailTemplate(string $path_to_view);
+```php
+EmailHandler::setEmailTemplate(string $path_to_view);
+```
     
 Ex: Default email template setting
 
-    EmailHandler::setEmailTemplate('bases::system.email'); // config('cms.email_template')
+```php
+EmailHandler::setEmailTemplate('bases::system.email'); // config('cms.email_template')
+```

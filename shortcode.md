@@ -17,7 +17,9 @@ This concept based on Wordpress functions.
 
 Function: Add hook for shortcode tag.
 
-    add_shortcode(string $tag, callable $func)
+```php
+add_shortcode(string $tag, callable $func)
+```
     
 <a name="add_shortcode_description"></a>
 ### Description
@@ -27,34 +29,40 @@ Which means that if another plugin has a similar shortcode, it will override you
 
 Simplest example of a shortcode tag using the API:
 
-    // [footag foo="bar"]
-    function footag_func( $atts ) {
-        return "foo = {
-            $atts[foo]
-        }";
-    }
-    add_shortcode( 'footag', 'footag_func' );
+```php
+// [footag foo="bar"]
+function footag_func( $atts ) {
+    return "foo = {
+        $atts[foo]
+    }";
+}
+add_shortcode( 'footag', 'footag_func' );
+```
     
 Example with nice attribute defaults:
 
-    // [bartag foo="bar"]
-    function bartag_func( $atts ) {
-        $args = shortcode_atts( array(
-            'foo' => 'no foo',
-            'baz' => 'default baz',
-        ), $atts );
-    
-        return "foo = {$args['foo']}";
-    }
-    add_shortcode( 'bartag', 'bartag_func' );
+```php
+// [bartag foo="bar"]
+function bartag_func( $atts ) {
+    $args = shortcode_atts( array(
+        'foo' => 'no foo',
+        'baz' => 'default baz',
+    ), $atts );
+
+    return "foo = {$args['foo']}";
+}
+add_shortcode( 'bartag', 'bartag_func' );
+```
 
 Example with enclosed content:
 
-    // [baztag]content[/baztag]
-    function baztag_func( $atts, $content = '' ) {
-        return "content = $content";
-    }
-    add_shortcode( 'baztag', 'baztag_func' );
+```php
+// [baztag]content[/baztag]
+function baztag_func( $atts, $content = '' ) {
+    return "content = $content";
+}
+add_shortcode( 'baztag', 'baztag_func' );
+```
 
 <a name="add_shortcode_parameters"></a>
 ### Parameters
@@ -70,7 +78,9 @@ Example with enclosed content:
 
 Function: Search content for shortcodes and filter shortcodes through their hooks.
 
-    do_shortcode(string $content, bool $ignore_html = false)
+```php
+do_shortcode(string $content, bool $ignore_html = false)
+```
     
 <a name="add_shortcode_description"></a>
 ### Description
@@ -90,9 +100,11 @@ This might cause issues when plugins are disabled but the shortcode will still s
 <a name="generate_shortcode"></a>
 ##generate_shortcode()
 
-    /**
-     * @param $name
-     * @param array $attributes
-     * @return string
-     */
-    function generate_shortcode($name, array $attributes)
+```php
+/**
+ * @param $name
+ * @param array $attributes
+ * @return string
+ */
+function generate_shortcode($name, array $attributes)
+```

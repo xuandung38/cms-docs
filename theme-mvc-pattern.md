@@ -7,7 +7,9 @@
 ##Using Laravel structure
 You can start working develop theme base on default theme `ripple` or using starter theme by command:
     
-    php artisan theme:create <your theme name>
+```bash
+php artisan theme:create <your theme name>
+```
  
 Then use MVC pattern:
  
@@ -15,12 +17,14 @@ Then use MVC pattern:
 
 To add new route for your theme, you can add it in `/routes/web.php`:
 
-    Route::get('/test', function () {
-       return Theme::scope('test')->render();
-    });
+```php
+Route::get('/test', function () {
+   return Theme::scope('test')->render();
+});
+```
 
 
-> You need to add a view with name `test.blade.php` in `/public/themes/<your theme>/views` to run above example.
+> {note} You need to add a view with name `test.blade.php` in `/public/themes/<your theme>/views` to run above example.
  
 \- Models: `/app/Models`
 
@@ -32,39 +36,45 @@ To add new route for your theme, you can add it in `/routes/web.php`:
 ## Create MVC inside theme
 You can start working develop theme base on default theme `ripple` or using starter theme by command:
     
-    php artisan theme:create <your theme name>
+```bash
+php artisan theme:create <your theme name>
+```
     
 ###1. Autoload Psr-4 for your theme
 \- To start working on MVC theme, please create folder `src` on your theme.
 
 \- Create file `composer.json` on your theme
 
+```javascript
+{
+  "name": "botble/theme",
+  "type": "Botble theme",
+  "description": "Example theme for Botble CMS",
+  "homepage": "http://botble.com",
+  "authors": [
     {
-      "name": "botble/theme",
-      "type": "Botble theme",
-      "description": "Example theme for Botble CMS",
-      "homepage": "http://botble.com",
-      "authors": [
-        {
-          "name": "Botble",
-          "homepage": "http://botble.com"
-        }
-      ],
-      "require": {
-        "php": ">=5.6.0"
-      },
-      "autoload": {
-        "psr-4": {
-          "Ripple\\": "src/"
-        }
-      }
+      "name": "Botble",
+      "homepage": "http://botble.com"
     }
+  ],
+  "require": {
+    "php": ">=5.6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ripple\\": "src/"
+    }
+  }
+}
+```
    
-> You can customize this file by your information
+> {note} You can customize this file by your information
 
 \- Open CMD or Terminal and cd to your theme folder and run:
 
-    composer dump-autoload 
+```bash
+composer dump-autoload
+``` 
     
 This command will generate autoload files to autoload `/public/theme/<your theme>/src` folder.
 
@@ -72,29 +82,33 @@ This command will generate autoload files to autoload `/public/theme/<your theme
 
 Create file `routes.php` in folder `/public/theme/<your theme>/functions`:
 
-    <?php 
+```php
+<?php 
     
     require_once __DIR__ . '/../vendor/autoload.php';
     
     Route::get('test', function () {
         dd('This is a test route');
     });
+```
 
 ###3. Models
 
 You can create folder `public/themes/<your theme>/src/Models` and put all models you need here. Namespace for it will be `Ripple\Models`.
-> `Ripple` is the name that you autoload in step 1
+> {note} `Ripple` is the name that you autoload in step 1
 
 Ex: `public/themes/<your theme>/src/Models/Post.php`
 
-    namespace Ripple/Models;
+```php
+namespace Ripple/Models;
     
-    use Eloquent;
-    
-    class Post extends Eloquent
-    {
-        protected $table = 'posts';
-    }
+use Eloquent;
+
+class Post extends Eloquent
+{
+    protected $table = 'posts';
+}
+```
     
 ###4. Controllers
 

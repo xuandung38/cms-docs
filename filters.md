@@ -7,7 +7,7 @@
     - [Description](#apply_filter_description)
     - [Parameters](#apply_filter_parameters)
     
-This concept based on Wordpress hook functions.
+This concept is based on Wordpress hook functions.
 
 <a name="add_filter"></a>
 ## add_filter()
@@ -16,7 +16,9 @@ This concept based on Wordpress hook functions.
 
 Function: Hook a function or method to a specific filter action.
 
-    add_filter(string $tag, callable $function_to_add, int $priority = 10, int $accepted_args = 1)
+```php
+add_filter(string $tag, callable $function_to_add, int $priority = 10, int $accepted_args = 1)
+```
     
 <a name="add_filter_description"></a>
 ### Description
@@ -29,11 +31,13 @@ The following example shows how a callback function is bound to a filter hook.
 
 Note that `$example` is passed to the callback, (maybe) modified, then returned:
 
-    function example_callback( $example ) {
-        // Maybe modify $example in some way.
-        return $example;
-    }
-    add_filter( 'example_filter', 'example_callback' );
+```php
+function example_callback( $example ) {
+    // Maybe modify $example in some way.
+    return $example;
+}
+add_filter( 'example_filter', 'example_callback' );
+```
     
 Bound callbacks can accept from none to the total number of arguments passed as parameters
 in the corresponding `apply_filters()` call.
@@ -44,24 +48,26 @@ the `$accepted_args` value must reflect the number of arguments the bound callba
 opted to accept. If no arguments were accepted by the callback that is considered to be the
 same as accepting 1 argument. For example:
 
-    // Filter call.
-    $value = apply_filters( 'hook', $value, $arg2, $arg3 );
+```php
+// Filter call.
+$value = apply_filters( 'hook', $value, $arg2, $arg3 );
+
+// Accepting zero/one arguments.
+function example_callback() {
+    ...
+    return 'some value';
+}
+add_filter( 'hook', 'example_callback' ); // Where $priority is default 10, $accepted_args is default 1.
+
+// Accepting two arguments (three possible).
+function example_callback( $value, $arg2 ) {
+    ...
+    return $maybe_modified_value;
+}
+add_filter( 'hook', 'example_callback', 10, 2 ); // Where $priority is 10, $accepted_args is 2.
+```
     
-    // Accepting zero/one arguments.
-    function example_callback() {
-        ...
-        return 'some value';
-    }
-    add_filter( 'hook', 'example_callback' ); // Where $priority is default 10, $accepted_args is default 1.
-    
-    // Accepting two arguments (three possible).
-    function example_callback( $value, $arg2 ) {
-        ...
-        return $maybe_modified_value;
-    }
-    add_filter( 'hook', 'example_callback', 10, 2 ); // Where $priority is 10, $accepted_args is 2.
-    
-> The function will return true whether or not the callback is valid. It is up to you to take care. 
+> {note} The function will return true whether or not the callback is valid. It is up to you to take care. 
 This is done for optimization purposes, so everything is as quick as possible.
 
 <a name="add_filter_parameters"></a>
@@ -86,7 +92,9 @@ This is done for optimization purposes, so everything is as quick as possible.
 
 Function: Call the functions added to a filter hook.
 
-    apply_filters(string $tag, mixed $value)
+```php
+apply_filters(string $tag, mixed $value)
+```
     
 <a name="add_filter_description"></a>
 ### Description
@@ -95,20 +103,22 @@ The callback functions attached to filter hook $tag are invoked by calling this 
 
 The function allows for additional arguments to be added and passed to hooks.
 
-    // Our filter callback function
-    function example_callback( $string, $arg1, $arg2 ) {
-        // (maybe) modify $string
-        return $string;
-    }
-    add_filter( 'example_filter', 'example_callback', 10, 3 );
-    
-    /*
-     * Apply the filters by calling the 'example_callback' function we
-     * "hooked" to 'example_filter' using the add_filter() function above.
-     * - 'example_filter' is the filter hook $tag
-     * - 'filter me' is the value being filtered
-     * - $arg1 and $arg2 are the additional arguments passed to the callback.
-    $value = apply_filters( 'example_filter', 'filter me', $arg1, $arg2 );
+```php
+// Our filter callback function
+function example_callback( $string, $arg1, $arg2 ) {
+    // (maybe) modify $string
+    return $string;
+}
+add_filter( 'example_filter', 'example_callback', 10, 3 );
+
+/*
+ * Apply the filters by calling the 'example_callback' function we
+ * "hooked" to 'example_filter' using the add_filter() function above.
+ * - 'example_filter' is the filter hook $tag
+ * - 'filter me' is the value being filtered
+ * - $arg1 and $arg2 are the additional arguments passed to the callback.
+$value = apply_filters( 'example_filter', 'filter me', $arg1, $arg2 );
+```
 
 <a name="apply_filters_parameters"></a>
 ### Parameters
