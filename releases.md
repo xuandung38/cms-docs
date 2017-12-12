@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 2.4](#version_2_4)
 - [Botble 2.3.1](#version_2_3_1)
 - [Botble 2.3](#version_2_3)
 - [Botble 2.2.1](#version_2_2_1)
@@ -7,6 +8,15 @@
 - [Botble 2.1](#version_2_1)
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
+
+<a name="version_2_4"></a>
+## Botble 2.4
+    - Upgrade to latest Laravel version 5.5. In this version, it's required PHP >= 7.0
+    - Separate Admin users and members.
+    - Update editor: allows multiple rich editor in a page, switch between text editor & rich editor.
+    - Fix UI: dashboard widgets, plugins.
+
+>  {warning} This a big update with Laravel framework, it's core update so to upgrade from version 2.3, you should copy your themes and plugins to version 2.4 and use new database from /database.sql.
 
 <a name="version_2_3_1"></a>
 ## Botble 2.3.1

@@ -1,8 +1,14 @@
 # Virtual host
 
+- [Windows (Ampps)](#windows-ampps)
 - [Windows (Xampp)](#windows)
 - [Linux or OSX](#linux_osx)
 
+<a name="windows-ampps"></a>
+## Windows (Ampps)
+**We recommend to use Ampps (https://www.ampps.com) instead of Xampp to create develop environment. With Ampps, you can easy to add/manage virtual domain like cms.local.**
+
+Please see video: https://www.youtube.com/watch?v=F1CaiR3L9FQ
 <a name="windows"></a>
 ## Windows (Xampp)
 

@@ -6,9 +6,10 @@
 <a name="requirement"></a>
 ## Requirement
 
+**We recommend to use Ampps (https://www.ampps.com) instead of Xampp to create develop environment. With Ampps, you can easy to add/manage virtual domain like cms.local https://www.youtube.com/watch?v=F1CaiR3L9FQ**
 
 - Apache, nginx, or another compatible web server.
-- PHP >= 5.6.4 >> Higher
+- PHP >= 7.0 >> Higher
 - MySQL Database server
 - OpenSSL PHP Extension
 - Mbstring PHP Extension
@@ -18,30 +19,18 @@
 - PHP_CURL Module Enable
 
 
->  {warning} On this projects, I use the latest Laravel version (currently 5.4). Please go to [Laravel documentation page](https://laravel.com/docs) for more information.
+>  {warning} On this projects, I use the latest Laravel version (currently 5.5). Please go to [Laravel documentation page](https://laravel.com/docs) for more information.
 
 <a name="installation"></a>
 ## Installation
 
 ### Manual installation
 
-**- Import sample database from `database/dump/base.sql`**
+**- Import sample database from `database.sql`**
 
 **- Create `.env` file from `.env-example` and update your configuration**
 
-**- Open CMD and run `composer install` or `composer update` to install vendor packages.**
-
-**- Run your website in the browser**: `php artisan serve`
-
-### Install using shell script
-* Chmod 777 for `install.sh`
-* Run file `./install.sh`
-
-> {notice} For Linux users <br />
-If you got this error /usr/bin/env: ‘bash\r’: No such file or directory" <br />
-Please run `sed $'s/\r$//' ./install.sh > ./install.Unix.sh` and use ./install.Unix.sh to install <br />
-If you got this error "bash: ./install.sh: Permission denied" <br />
-Please run `sudo chmod 777 -R install.sh` to make sure this file has permission to execute.
+**- Create a virtual host like cms.local to run Botble CMS. Follow these steps to see how to config virtual host: [Setup virtual host](/2.4/virtualhost).** 
 
 <a name="note"></a>
 ## Note
@@ -56,7 +45,7 @@ Please remove `public` in your domain also, you can point your domain to `public
 
 or use `.httaccess` (http://stackoverflow.com/questions/23837933/how-can-i-remove-public-index-php-in-the-url-generated-laravel)
 
-Follow these steps to see how to config virtual host: [Setup virtual host](/v/2.1/virtualhost).
+Follow these steps to see how to config virtual host: [Setup virtual host](/2.4/virtualhost).
 
 Well done! Now, you can login to the dashboard by access to your_domain_site/admin.
 
