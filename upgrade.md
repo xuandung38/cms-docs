@@ -1,9 +1,16 @@
 # Upgrade Guide
 
+- [Upgrade To 2.4](#upgrade-2.4)
 - [Upgrade To 2.3](#upgrade-2.3)
 - [Upgrade To 2.2.1](#upgrade-2.2.1)
 - [Upgrade To 2.2](#upgrade-2.2)
 - [Upgrading To 2.1](#upgrade-2.1)
+
+<a name="upgrade-2.3"></a>
+## Upgrade To 2.3
+- Copy what you changes (plugins, themes) and paste to new version 2.4.
+- Route `public.single.detail` change to `public.single`.
+- Should use new database from /database.sql. Old database can not be used.
 
 <a name="upgrade-2.3"></a>
 ## Upgrade To 2.3
