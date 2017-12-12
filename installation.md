@@ -19,7 +19,7 @@
 - PHP_CURL Module Enable
 
 
->  {warning} On this projects, I use the latest Laravel version (currently 5.5). Please go to [Laravel documentation page](https://laravel.com/docs) for more information.
+>  {warning} On this project, I use the latest Laravel version (currently 5.5). Please go to [Laravel documentation page](https://laravel.com/docs) for more information.
 
 <a name="installation"></a>
 ## Installation
