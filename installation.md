@@ -24,13 +24,13 @@
 <a name="installation"></a>
 ## Installation
 
-### Manual installation
-
 **- Import sample database from `database.sql`**
 
 **- Create `.env` file from `.env-example` and update your configuration**
 
-**- Create a virtual host like cms.local to run Botble CMS. Follow these steps to see how to config virtual host: [Setup virtual host](/2.4/virtualhost).** 
+** - Run the first test with command `php artisan serve`. Open `http://localhost:8000`, you should see home page of Botble CMS.
+
+**- Botble should run on a virtual host. Create a virtual host like cms.local to run Botble CMS. Follow these steps to see how to config virtual host: [Setup virtual host](/2.4/virtualhost).** 
 
 <a name="note"></a>
 ## Note
