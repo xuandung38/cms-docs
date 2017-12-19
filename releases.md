@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 2.4.1](#version_2_4_1)
 - [Botble 2.4](#version_2_4)
 - [Botble 2.3.1](#version_2_3_1)
 - [Botble 2.3](#version_2_3)
@@ -8,6 +9,13 @@
 - [Botble 2.1](#version_2_1)
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
+
+<a name="version_2_4_1"></a>
+## Botble 2.4.1
+    - Fix bug change profile image
+    - Refactor plugin language & gallery
+    - Move member to plugin
+    - Update default database
 
 <a name="version_2_4"></a>
 ## Botble 2.4
