@@ -26,3 +26,4 @@
     - [Shortcode](shortcode.md)
     - [Meta box](meta_box.md)
     - [Mail](mail.md)
+    - [FAQ](faq.md)

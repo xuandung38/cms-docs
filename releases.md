@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 2.4.2](#version_2_4_2)
 - [Botble 2.4.1](#version_2_4_1)
 - [Botble 2.4](#version_2_4)
 - [Botble 2.3.1](#version_2_3_1)
@@ -9,6 +10,15 @@
 - [Botble 2.1](#version_2_1)
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
+
+<a name="version_2_4_2"></a>
+## Botble 2.4.2
+### 29-12-2017
+- Refactor plugin language to make it easier to integrate with new plugin (check FAQ for more detail).
+- Fix bug when deleting default user `botble`.
+- Redirect back to previous page after login
+- Update default database.
+- Refactor slug plugin.
 
 <a name="version_2_4_1"></a>
 ## Botble 2.4.1
