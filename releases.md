@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 2.5](#version_2_5)
 - [Botble 2.4.2](#version_2_4_2)
 - [Botble 2.4.1](#version_2_4_1)
 - [Botble 2.4](#version_2_4)
@@ -11,14 +12,27 @@
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
 
+<a name="version_2_5"></a>
+## Botble 2.5
+### 19-01-2018
+- Update media module. Support Amazon S3 and allowing to upload video/mp4, support preview .mp4 video on admin panel.
+- Allowing to add more extensions. Just need to add to .env file.
+```
+    RV_MEDIA_ALLOWED_MIME_TYPES=jpg,jpeg,png,gif,txt,docx,zip,mp3,bmp,csv,docs,xls,xlsx,ppt,pptx,pdf,mp4
+```
+- Fix admin menu with permissions.
+- Fix some UI bugs.
+- Add cache management. Now we can clear cache from admin panel.
+- Upgrade custom field: Fix bugs, refactor code & adding import/export functions.
+
 <a name="version_2_4_2"></a>
 ## Botble 2.4.2
 ### 29-12-2017
-- Refactor plugin language to make it easier to integrate with new plugin (check FAQ for more detail).
-- Fix bug when deleting default user `botble`.
-- Redirect back to previous page after login
-- Update default database.
-- Refactor slug plugin.
+    - Refactor plugin language to make it easier to integrate with new plugin (check FAQ for more detail).
+    - Fix bug when deleting default user `botble`.
+    - Redirect back to previous page after login
+    - Update default database.
+    - Refactor slug plugin.
 
 <a name="version_2_4_1"></a>
 ## Botble 2.4.1
