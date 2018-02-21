@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 2.6](#version_2_6)
 - [Botble 2.5](#version_2_5)
 - [Botble 2.4.2](#version_2_4_2)
 - [Botble 2.4.1](#version_2_4_1)
@@ -11,6 +12,16 @@
 - [Botble 2.1](#version_2_1)
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
+
+<a name="version_2_6"></a>
+## Botble 2.6
+### 21-02-2018
+
+- Fix member reset password bug.
+- Fix to change status after creating a new plugin.
+- Auto register plugin menu to admin dashboard after creating new plugin.
+- Update vendor packages.
+- Fix coding standard.
 
 <a name="version_2_5"></a>
 ## Botble 2.5
