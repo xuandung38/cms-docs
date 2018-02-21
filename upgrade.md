@@ -1,11 +1,17 @@
 # Upgrade Guide
 
+- [Upgrade To 2.6](#upgrade-2.6)
 - [Upgrade To 2.4.1](#upgrade-2.4.1)
 - [Upgrade To 2.4](#upgrade-2.4)
 - [Upgrade To 2.3](#upgrade-2.3)
 - [Upgrade To 2.2.1](#upgrade-2.2.1)
 - [Upgrade To 2.2](#upgrade-2.2)
 - [Upgrading To 2.1](#upgrade-2.1)
+
+<a name="upgrade-2.5"></a>
+## Upgrade from 2.5 to 2.6
+- Run `composer install` to update vendor packages.
+- Run `php artisan migrate` to update database.
 
 <a name="upgrade-2.4.1"></a>
 ## Upgrade from 2.4 to 2.4.1
