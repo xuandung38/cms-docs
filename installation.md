@@ -9,17 +9,21 @@
 **We recommend to use Ampps (https://www.ampps.com) instead of Xampp to create develop environment. With Ampps, you can easy to add/manage virtual domain like cms.local https://www.youtube.com/watch?v=F1CaiR3L9FQ**
 
 - Apache, nginx, or another compatible web server.
-- PHP >= 7.0 >> Higher
+- PHP >= 7.1.3 >> Higher
 - MySQL Database server
+- PDO PHP Extension
 - OpenSSL PHP Extension
 - Mbstring PHP Extension
 - Exif PHP Extension
 - Fileinfo Extension
+- XML PHP Extension
+- Ctype PHP Extension
+- JSON PHP Extension
+- Tokenizer PHP Extension
 - Module Re_write server
 - PHP_CURL Module Enable
 
-
->  {warning} On this project, I use the latest Laravel version (currently 5.5). Please go to [Laravel documentation page](https://laravel.com/docs) for more information.
+>  {warning} On this project, I use the latest Laravel version (currently 5.6). Please go to [Laravel documentation page](https://laravel.com/docs) for more information.
 
 <a name="installation"></a>
 ## Installation

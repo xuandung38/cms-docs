@@ -2,18 +2,17 @@
 
 - [Introduction](#introduction)
 - [Demo](#demo)
-- [Video tutorials](#video_tutorials)
 - [Why choose us](#why_choose_us)
 - [Botble Team](#botble_team)
 
 <a name="introduction"></a>
 ## Introduction
 
-PHP platform based on Laravel Framework 5.4
+PHP platform based on Laravel Framework 5.6
 
 Created: `07/06/2016`
 
-Current version: `2.3`
+Current version: `3.0`
 
 By: [Botble Technologies](https://botble.com)
 
@@ -32,21 +31,6 @@ Admin Area: [http://cms.botble.com/admin](http://cms.botble.com/admin)
 Username: `botble`
 
 Password: `159357`
-
-<a name="video_tutorials"></a>
-## Video tutorials
-
-Install Botble version 2.0
-
-> {info} [https://www.youtube.com/watch?v=DAZe2V_A0wo](https://www.youtube.com/watch?v=DAZe2V_A0wo)
-
-Create a custom module with CRUD and permissions
-
-> {info} [https://www.youtube.com/watch?v=8F4wfrS9svs](https://www.youtube.com/watch?v=8F4wfrS9svs)
-
-Remove a module
-
-> {info} [https://www.youtube.com/watch?v=jmex2G4eC18](https://www.youtube.com/watch?v=jmex2G4eC18)
 
 <a name="why_choose_us"></a>
 ## Why choose us

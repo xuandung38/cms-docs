@@ -1,5 +1,6 @@
 # Upgrade Guide
 
+- [Upgrade To 3.0](#upgrade-3.0)
 - [Upgrade To 2.6](#upgrade-2.6)
 - [Upgrade To 2.4.1](#upgrade-2.4.1)
 - [Upgrade To 2.4](#upgrade-2.4)
@@ -7,6 +8,15 @@
 - [Upgrade To 2.2.1](#upgrade-2.2.1)
 - [Upgrade To 2.2](#upgrade-2.2)
 - [Upgrading To 2.1](#upgrade-2.1)
+
+<a name="upgrade-3.0"></a>
+## Upgrade from 2.6 to 3.0
+
+- Copy your theme to new source code.
+- Run `composer install` to update vendor packages.
+- Run `php artisan migrate` to update database.
+
+> {warning} Old custom plugin which you built with Botble CMS v2.6 will not work on v3.0.
 
 <a name="upgrade-2.5"></a>
 ## Upgrade from 2.5 to 2.6

@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 3.0](#version_3_0)
 - [Botble 2.6](#version_2_6)
 - [Botble 2.5](#version_2_5)
 - [Botble 2.4.2](#version_2_4_2)
@@ -12,6 +13,18 @@
 - [Botble 2.1](#version_2_1)
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
+
+<a name="version_3_0"></a>
+## Botble 3.0
+### 04-04-2018
+
+- Upgrade to Laravel 5.6
+- Add Passport support
+- Refactor plugin system
+- Refactor ACL system
+- Fix bug member login and forgot password.
+- Update UI
+- Update some vendor packages
 
 <a name="version_2_6"></a>
 ## Botble 2.6
