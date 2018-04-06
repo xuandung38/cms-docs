@@ -17,7 +17,7 @@
 - Run `composer install` to update vendor packages.
 - Run `php artisan migrate` to update database.
 
-> Notice: Old custom plugins which you built with Botble CMS v2.6 will not work on v3.0.
+> {notice} Old custom plugins which you built with Botble CMS v2.6 will not work on v3.0.
 
 <a name="upgrade-2.5"></a>
 ## Upgrade from 2.5 to 2.6
@@ -38,7 +38,7 @@
 <a name="upgrade-2.3"></a>
 ## Upgrade To 2.3
 
-> Notice: You should not upgrade to version 2.3 if your project is stable now. Because it has a lot of change so it can break your site.
+> {notice} You should not upgrade to version 2.3 if your project is stable now. Because it has a lot of change so it can break your site.
 
 - Override folder `/core` and `/plugins` from new version.
 
@@ -87,7 +87,7 @@ Upgrade script for Windows OS will be update soon. From now, you can follow `upg
 <a name="upgrade-2.1"></a>
 ## Upgrading To 2.1
 
-> Notice: This version using Laravel Framework 5.4 so if you are working on Laravel 5.3, please override all default files and folders of Laravel version 5.4 before upgrade.
+> {notice} This version using Laravel Framework 5.4 so if you are working on Laravel 5.3, please override all default files and folders of Laravel version 5.4 before upgrade.
 
 ### Core and plugins
 Override folder `/core` and `/plugins` from new version.
