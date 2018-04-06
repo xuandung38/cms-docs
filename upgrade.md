@@ -12,11 +12,12 @@
 <a name="upgrade-3.0"></a>
 ## Upgrade from 2.6 to 3.0
 
+- Make sure PHP version to your server >= 7.1.3
 - Copy your theme to new source code.
 - Run `composer install` to update vendor packages.
 - Run `php artisan migrate` to update database.
 
-> {warning} Old custom plugin which you built with Botble CMS v2.6 will not work on v3.0.
+> {warning} Old custom plugins which you built with Botble CMS v2.6 will not work on v3.0.
 
 <a name="upgrade-2.5"></a>
 ## Upgrade from 2.5 to 2.6

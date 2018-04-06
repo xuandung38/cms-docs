@@ -18,7 +18,7 @@
 ## Botble 3.0
 ### 04-04-2018
 
-- Upgrade to Laravel 5.6
+- Upgrade to Laravel 5.6 (change PHP required version to >=7.1.3)
 - Add Passport support
 - Refactor plugin system
 - Refactor ACL system
