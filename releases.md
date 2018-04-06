@@ -72,7 +72,7 @@
     - Update editor: allows multiple rich editor in a page, switch between text editor & rich editor.
     - Fix UI: dashboard widgets, plugins.
 
->  Notice: This a big update with Laravel framework, it's core update so to upgrade from version 2.3, you should copy your themes and plugins to version 2.4 and use new database from /database.sql.
+>  {warning} This a big update with Laravel framework, it's core update so to upgrade from version 2.3, you should copy your themes and plugins to version 2.4 and use new database from /database.sql.
 
 <a name="version_2_3_1"></a>
 ## Botble 2.3.1
