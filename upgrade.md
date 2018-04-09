@@ -1,5 +1,6 @@
 # Upgrade Guide
 
+- [Upgrade To 3.0.1](#upgrade-3.0.1)
 - [Upgrade To 3.0](#upgrade-3.0)
 - [Upgrade To 2.6](#upgrade-2.6)
 - [Upgrade To 2.4.1](#upgrade-2.4.1)
@@ -8,6 +9,13 @@
 - [Upgrade To 2.2.1](#upgrade-2.2.1)
 - [Upgrade To 2.2](#upgrade-2.2)
 - [Upgrading To 2.1](#upgrade-2.1)
+
+<a name="upgrade-3.0.1"></a>
+## Upgrade from 3.0 to 3.0.1
+
+- Override folder /core and /plugins
+- Run "php artisan vendor:publish --tag=public --force" to update assets.
+- Run "composer install" to update database.
 
 <a name="upgrade-3.0"></a>
 ## Upgrade from 2.6 to 3.0
