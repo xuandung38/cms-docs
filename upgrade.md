@@ -14,7 +14,8 @@
 <a name="upgrade-3.0.2"></a>
 ## Upgrade from 3.0.1 to 3.0.2
 
-- Replace file plugins/custom-field/src/Http/Controllers/CustomFieldController.php and plugins/custom-field/src/Forms/CustomFieldForm.php
+- Replace file plugins/custom-field/src/Http/Controllers/CustomFieldController.php,
+ plugins/custom-field/src/Forms/CustomFieldForm.php and plugins/custom-field/resources/views/rules.blade.php
 with new ones which downloaded from Codecanyon
 
 <a name="upgrade-3.0.1"></a>
