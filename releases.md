@@ -1,7 +1,8 @@
 # Release Notes
 
-- [Botble 3.0](#version_3_0)
+- [Botble 3.0.2](#version_3_0.2)
 - [Botble 3.0.1](#version_3_0.1)
+- [Botble 3.0](#version_3_0)
 - [Botble 2.6](#version_2_6)
 - [Botble 2.5](#version_2_5)
 - [Botble 2.4.2](#version_2_4_2)
@@ -14,6 +15,12 @@
 - [Botble 2.1](#version_2_1)
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
+
+<a name="version_3_0_2"></a>
+## Botble 3.0.2
+### 12-04-2018
+
+- Hotfix bug cannot create new custom field
 
 <a name="version_3_0_1"></a>
 ## Botble 3.0.1
