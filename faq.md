@@ -28,7 +28,7 @@ Event::listen(SessionStarted::class, function () {
 });
 ```
 
-# How to add new language to admin panel?
+## How to add new language to admin panel?
 
 - Add your language in /resources/lang directory, copy all files /resources/lang/en and paste to your language folder and translate it to your language.
 
