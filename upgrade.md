@@ -1,5 +1,6 @@
 # Upgrade Guide
 
+- [Upgrade To 3.1](#upgrade-3.1)
 - [Upgrade To 3.0.2](#upgrade-3.0.2)
 - [Upgrade To 3.0.1](#upgrade-3.0.1)
 - [Upgrade To 3.0](#upgrade-3.0)
@@ -10,6 +11,14 @@
 - [Upgrade To 2.2.1](#upgrade-2.2.1)
 - [Upgrade To 2.2](#upgrade-2.2)
 - [Upgrading To 2.1](#upgrade-2.1)
+
+<a name="upgrade-3.1"></a>
+## Upgrade from 3.0.2 to 3.1
+
+- Run `composer install` to update vendor packages.
+- Run `php artisan migrate` to update database.
+- Deprecated classes: Botble\Base\Tables\TableAbstract & Botble\Base\Tables\TableBuilder will be removed in the next version, 
+please change to use Botble\Table\Abstracts\TableAbstract & Botble\Table\TableBuilder
 
 <a name="upgrade-3.0.2"></a>
 ## Upgrade from 3.0.1 to 3.0.2

@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 3.](#1version_3_1)
 - [Botble 3.0.2](#version_3_0.2)
 - [Botble 3.0.1](#version_3_0.1)
 - [Botble 3.0](#version_3_0)
@@ -15,6 +16,17 @@
 - [Botble 2.1](#version_2_1)
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
+
+<a name="version_3_1"></a>
+## Botble 3.1
+### 15-05-2018
+
+- Support multi-language for theme options & widgets
+- Fix bug add super users
+- Upgrade table system & add filter tables
+- Support change language on the login page
+- Fix bug adding admin locale
+- Fix bug create plugin by command
 
 <a name="version_3_0_2"></a>
 ## Botble 3.0.2
