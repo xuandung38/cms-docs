@@ -1,5 +1,6 @@
 # Upgrade Guide
 
+- [Upgrade To 3.2](#upgrade-3.2)
 - [Upgrade To 3.1](#upgrade-3.1)
 - [Upgrade To 3.0.2](#upgrade-3.0.2)
 - [Upgrade To 3.0.1](#upgrade-3.0.1)
@@ -11,6 +12,15 @@
 - [Upgrade To 2.2.1](#upgrade-2.2.1)
 - [Upgrade To 2.2](#upgrade-2.2)
 - [Upgrading To 2.1](#upgrade-2.1)
+
+<a name="upgrade-3.2"></a>
+## Upgrade from 3.1 to 3.2
+
+- Override folder /core & /plugins with new source code.
+- Run `php artisan vendor:publish --tag=public --force`
+- Run `php artisan vendor:publish --tag=lang --force`
+- Run `composer install` to update vendor packages.
+- Run `php artisan migrate` to update database.
 
 <a name="upgrade-3.1"></a>
 ## Upgrade from 3.0.2 to 3.1

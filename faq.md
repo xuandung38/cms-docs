@@ -33,3 +33,16 @@ Event::listen(SessionStarted::class, function () {
 - Add your language in /resources/lang directory, copy all files /resources/lang/en and paste to your language folder and translate it to your language.
 
 - You can use Laravel language https://github.com/caouecs/Laravel-lang/tree/master/src to quick translate.
+
+## How to add new post format
+
+- Add below code to your themes /functions/functions.php
+
+```php
+register_post_format([
+    'post-format-key' => [
+        'key' => 'post-format-key',
+        'name' => 'Post Format Name',
+    ],
+]);
+```
