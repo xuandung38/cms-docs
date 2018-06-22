@@ -1,6 +1,6 @@
 # Theme
 
-- Adding menu to theme
+## Adding menu to theme
 
 ```php
     {!!
@@ -16,11 +16,11 @@
 
 'options' is attributes of `ul` tag. Ex: `'options' => ['id' => 'menu-header-main-menu', 'class' => 'menu']`
 
-- Customize menu views
+## Customize menu views
 
 To customize view to display menu. You can create a file in /public/themes/your-theme/partials.
 
-Ex: /public/themes/your-theme/partials/custom-menu.blade.php
+Ex: `/public/themes/your-theme/partials/custom-menu.blade.php`
 ```php
 <ul {!! $options !!}>
     @foreach ($menu_nodes as $key => $row)
@@ -53,3 +53,5 @@ And to show menu with custom view, using below code:
     ])
 !!}
 ```
+
+Menu with slug is 'menu-slug-key' will be generated using custom view in `/public/themes/your-theme/partials/custom-menu.blade.php`
