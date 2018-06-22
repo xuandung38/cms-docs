@@ -1,5 +1,6 @@
 # Upgrade Guide
 
+- [Upgrade To 3.2.1](#upgrade-3.2.1)
 - [Upgrade To 3.2](#upgrade-3.2)
 - [Upgrade To 3.1](#upgrade-3.1)
 - [Upgrade To 3.0.2](#upgrade-3.0.2)
@@ -12,6 +13,11 @@
 - [Upgrade To 2.2.1](#upgrade-2.2.1)
 - [Upgrade To 2.2](#upgrade-2.2)
 - [Upgrading To 2.1](#upgrade-2.1)
+
+<a name="upgrade-3.2.1"></a>
+## Upgrade from 3.2 to 3.2.1
+
+- Replace 3 files: `core/base/resources/views/layouts/master.blade.php`, `core/table/src/Abstracts/TableAbstract.php` & `plugins/block/src/Repositories/Eloquent/BlockRepository.php`
 
 <a name="upgrade-3.2"></a>
 ## Upgrade from 3.1 to 3.2

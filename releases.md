@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 3.2.1](#version_3_2_1)
 - [Botble 3.2](#version_3_2)
 - [Botble 3.2](#version_3_1)
 - [Botble 3.0.2](#version_3_0.2)
@@ -17,6 +18,12 @@
 - [Botble 2.1](#version_2_1)
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
+
+<a name="version_3_2_1"></a>
+## LaraMag 3.2.1
+### 22-06-2018
+
+- Hotfix bulk actions and language column
 
 <a name="version_3_2"></a>
 ## Botble 3.2
