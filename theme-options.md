@@ -57,7 +57,7 @@ theme_option()
 
 - Input (text, password, email, number)
 
-```
+```php
 ->setField([
         'id' => 'field_name',
         'section_id' => 'opt-text-subsection-section-id',
@@ -78,7 +78,7 @@ theme_option()
 
 - Select
 
-```
+```php
 ->setField([
     'id' => 'field_name',
     'section_id' => 'opt-text-subsection-section-id',
@@ -100,7 +100,7 @@ theme_option()
 
 - Image
 
-```
+```php
 ->setField([
     'id' => 'banner-ads',
     'section_id' => 'opt-text-subsection-section-id',
@@ -115,7 +115,7 @@ theme_option()
 
 - Editor (Ckeditor or TinyMCE, you can change it in settings)
 
-```
+```php
 ->setField([
     'id' => 'field_name',
     'section_id' => 'opt-text-subsection-section-id',
@@ -135,7 +135,7 @@ theme_option()
 
 - On/Off (Radio button)
 
-```
+```php
 ->setField([
     'id' => 'field_name',
     'section_id' => 'opt-text-subsection-section-id',
@@ -156,7 +156,7 @@ theme_option()
 
 - Custom Radio
 
-```
+```php
 ->setField([
     'id' => 'field_name',
     'section_id' => 'opt-text-subsection-section-id',
@@ -177,7 +177,7 @@ theme_option()
 
 - Custom Select
 
-``` 
+```php
 ->setField([
     'id' => 'field_name',
     'section_id' => 'opt-text-subsection-section-id',
