@@ -29,3 +29,7 @@
     - [Custom fields](custom-field.md)
     - [Mail](mail.md)
     - [FAQ](faq.md)
+    
+- Available plugins
+    - [Gallery](plugin-gallery.md)
+    - [Language](plugin-language.md)
