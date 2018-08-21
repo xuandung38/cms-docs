@@ -20,6 +20,7 @@
     - [Widget](theme-widget.md)
     - [MVC Pattern](theme-mvc-pattern.md)
     - [Theme options](theme-options.md)
+    - [Page template](theme-page-template.md)
     
 - Core
     - [Filters](filters.md)
