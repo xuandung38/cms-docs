@@ -35,7 +35,7 @@ register_post_format([
 ]);
 ```
 
-## How to share data from main view (public/themes/<your-theme>/views) to other views?
+## How to share data between theme's views?
 
 You can use Theme::set() and Theme::get() for partials views (Using Theme::partial('...')).
 
