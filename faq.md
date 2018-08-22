@@ -34,3 +34,32 @@ register_post_format([
     ],
 ]);
 ```
+
+## How to share data from main view (public/themes/<your-theme>/views) to other views?
+
+You can use Theme::set() and Theme::get() for partials views (Using Theme::partial('...')).
+
+Example:
+In `public/themes/ripple/views/post.blade.php` you can add bellow code to share $post data.
+
+```php
+@php
+    Theme::set('current_post', $post);
+@endphp
+```
+
+And if you want to use it in `public/themes/ripple/partials/header.blade.php`.
+
+```php
+@php
+    $current_post = Theme::get('current_post');
+@endphp
+```
+
+You can pass data like normal if you're using @include.
+
+Example:
+
+```php
+@include('theme.ripple::partials.header', ['current_post' => $post])
+```
