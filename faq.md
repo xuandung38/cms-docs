@@ -37,7 +37,7 @@ register_post_format([
 
 ## How to share data between theme's views?
 
-You can use Theme::set() and Theme::get() for partials views (Using Theme::partial('...')).
+You can use `Theme::set()` and `Theme::get()` for partials views (using `Theme::partial('...')`).
 
 Example:
 In `public/themes/ripple/views/post.blade.php` you can add bellow code to share $post data.
