@@ -28,6 +28,7 @@
     - [Shortcode](shortcode.md)
     - [Meta box](meta_box.md)
     - [Custom fields](custom-field.md)
+    - [Dashboard](dashboard.md)
     - [Mail](mail.md)
     - [FAQ](faq.md)
     
