@@ -23,6 +23,7 @@
     - [Layouts](theme-layout.md)
     
 - Core
+    - [Roles & permissions](role_permission.md)
     - [Filters](filters.md)
     - [Actions](actions.md)
     - [Shortcode](shortcode.md)
