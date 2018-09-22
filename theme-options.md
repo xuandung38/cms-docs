@@ -5,7 +5,7 @@
 <a name="basic-usage"></a>
 ## Basic usage of theme options
 
-Below is basic usage of theme options.
+Adding theme options fields.
 
 ```php
 theme_option()
@@ -52,6 +52,21 @@ theme_option()
     ])
     ->setArgs(['debug' => true]);
 ```
+
+Display theme option in the theme.
+
+```php
+{{ theme_option('option_name') }}
+```
+
+or 
+
+```php
+{!! theme_option('option_name') !!}
+```
+
+for theme option with HTML content.
+ 
 
 ## Supported fields
 
