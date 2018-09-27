@@ -6,8 +6,8 @@
 
 ```php
 $this->app->booted(function () {
-    if (defined('LANGUAGE_FILTER_MODEL_USING_MULTI_LANGUAGE')) {
-        config(['language.supported' => array_merge(config('language.supported'), [<YOUR_PLUGIN>_MODULE_SCREEN_NAME])]);
+    if (defined('LANGUAGE_MODULE_SCREEN_NAME')) {
+        config(['plugins.language.general.supported' => array_merge(config('plugins.language.general.supported'), [<YOUR_PLUGIN>_MODULE_SCREEN_NAME])]);
     }
 });
 ```
