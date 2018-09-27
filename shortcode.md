@@ -68,6 +68,8 @@ Example:
 {!! do_shortcode('[my-block][/my-block]') !!}
 ```
 
+> {warning} If there are no shortcode tags defined, then the content will be returned without any filtering. This might cause issues when plugins are disabled but the shortcode will still show up in the post or content.
+
 ## Generate shortcode
 
 To generate shortcode tag for a shortcode.
@@ -84,4 +86,3 @@ Example:
 echo generate_shortcode('my-block', ['foo' => 'bar', 'abc' => 'xyz']);
 ```
 
-> {warning} If there are no shortcode tags defined, then the content will be returned without any filtering. This might cause issues when plugins are disabled but the shortcode will still show up in the post or content.
