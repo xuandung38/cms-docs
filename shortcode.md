@@ -1,110 +1,73 @@
 # Shortcode
 
-- [add_shortcode()](#add_shortcode)
-    - [Description](#add_shortcode_description)
-    - [Parameters](#add_shortcode_parameters)
-- [do_shortcode()](#do_shortcode)
-    - [Description](#do_shortcode_description)
-    - [Parameters](#do_shortcode_parameters)
-- [generate_shortcode()](#generate_shortcode)
-    
-This concept based on Wordpress functions.
+## Add a shortcode
 
-<a name="add_shortcode"></a>
-## add_shortcode()
-
-** Reference: https://developer.wordpress.org/reference/functions/add_shortcode **
-
-Function: Add hook for shortcode tag.
+Using function `add_shortcode`:
 
 ```php
-add_shortcode(string $tag, callable $func)
+add_shortcode(string $key, string $name, $string description, callable $func)
 ```
-    
-<a name="add_shortcode_description"></a>
-### Description
 
-There can only be one hook for each shortcode. 
-Which means that if another plugin has a similar shortcode, it will override yours or yours will override theirs depending on which order the plugins are included and/or ran.
-
-Simplest example of a shortcode tag using the API:
+Example:
 
 ```php
-// [footag foo="bar"]
-function footag_func( $atts ) {
-    return "foo = {
-        $atts[foo]
-    }";
+add_shortcode('my-block', 'My block', 'Custom block for me', 'add_custom_block_shortcode');
+```
+
+Add callback function for shortcode. Example:
+
+```php
+function add_custom_block_shortcode() {
+    return 'This is my custom block';
+    // or 
+    return view('view-for-my-block')->render(); 
 }
-add_shortcode( 'footag', 'footag_func' );
-```
-    
-Example with nice attribute defaults:
-
-```php
-// [bartag foo="bar"]
-function bartag_func( $atts ) {
-    $args = shortcode_atts( array(
-        'foo' => 'no foo',
-        'baz' => 'default baz',
-    ), $atts );
-
-    return "foo = {$args['foo']}";
-}
-add_shortcode( 'bartag', 'bartag_func' );
 ```
 
-Example with enclosed content:
+If you don't want to create more function callback, you can do like this.
 
 ```php
-// [baztag]content[/baztag]
-function baztag_func( $atts, $content = '' ) {
-    return "content = $content";
-}
-add_shortcode( 'baztag', 'baztag_func' );
+add_shortcode('my-block', 'My block', 'Custom block for me', function() {
+    return 'This is my custom block';
+    // or 
+    return view('view-for-my-block')->render(); 
+});
 ```
 
-<a name="add_shortcode_parameters"></a>
-### Parameters
+> {note} You can add this function to your-theme/functions/functions.php or in function `boot` of your plugin service provider. 
 
-**$tag**: (string) (Required) Shortcode tag to be searched in post content.
+## Display shortcode in a theme
 
-**$func**: (callable) (Required) Hook to run when shortcode is found.
+By default, shortcode just can be shown on <your-theme-path>/views/index.blade.php, page.blade.php and post.blade.php
 
-<a name="do_shortcode"></a>
-## do_shortcode()
-
-** Reference: https://developer.wordpress.org/reference/functions/do_shortcode **
-
-Function: Search content for shortcodes and filter shortcodes through their hooks.
+You can find this in your-theme/config.php
 
 ```php
-do_shortcode(string $content, bool $ignore_html = false)
+$theme->composer(['index', 'page', 'post'], function(View $view) {
+    $view->withShortcodes();
+});
 ```
-    
-<a name="add_shortcode_description"></a>
-### Description
 
-If there are no shortcode tags defined, then the content will be returned without any filtering. 
-This might cause issues when plugins are disabled but the shortcode will still show up in the post or content.
+If you want to show shortcode in other pages, please add them to theme view composer.
 
-<a name="do_shortcode_parameters"></a>
-### Parameters
-
-**$content**: (string) (Required) Content to search for shortcodes.(string) (Required) The name of the shortcode hook.
-
-**$ignore_html**: 
-- (bool) (Optional) When true, shortcodes inside HTML elements will be skipped.
-- Default value: false
-
-<a name="generate_shortcode"></a>
-##generate_shortcode()
+Or you can render shortcode by manually.
 
 ```php
-/**
- * @param $name
- * @param array $attributes
- * @return string
- */
-function generate_shortcode($name, array $attributes)
+{!! do_shortcode('[my-block][/my-block]') !!}
+```
+
+## Generate shortcode
+
+To generate shortcode tag for a shortcode.
+
+```php
+echo generate_shortcode('my-block');
+```
+
+You can add param 2 to function `generate_shortcode`, it's attributes of shortcode.
+
+Example:
+
+```php
+echo generate_shortcode('my-block', ['foo' => 'bar', 'abc' => 'xyz']);
 ```
