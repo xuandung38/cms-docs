@@ -5,8 +5,10 @@
 Using function `add_shortcode`:
 
 ```php
-add_shortcode(string $key, string $name, $string description, callable $func)
+add_shortcode(string $key, string $name, $string description, callable $callback_function)
 ```
+
++ $callback_function: (callable) (Required) Callback function which will run when rendering shortcode. See example bellow.
 
 Example:
 
@@ -48,9 +50,19 @@ $theme->composer(['index', 'page', 'post'], function(View $view) {
 });
 ```
 
+So you can add short code to page or post content then shortcode should be displayed on page or post.
+
 If you want to show shortcode in other pages, please add them to theme view composer.
 
-Or you can render shortcode by manually.
+Or you can render shortcode by manually. Using function `do_short_code`.
+
+```php
+do_shortcode(string $content)
+```
+
++ **$content**: (string) (Required) Content to search for shortcodes. (string) (Required) The name of the shortcode hook.
+
+Example:
 
 ```php
 {!! do_shortcode('[my-block][/my-block]') !!}
@@ -71,3 +83,5 @@ Example:
 ```php
 echo generate_shortcode('my-block', ['foo' => 'bar', 'abc' => 'xyz']);
 ```
+
+> {note} If there are no shortcode tags defined, then the content will be returned without any filtering. This might cause issues when plugins are disabled but the shortcode will still show up in the post or content.
