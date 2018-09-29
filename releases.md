@@ -21,7 +21,7 @@
 - [Botble 1.0](#version_1_0)
 
 <a name="version_3_3"></a>
-## Botble 3.2.1
+## Botble 3.3
 ### 30-09-2018
 - See what's new here: https://botble.com/whats-new-in-botble-cms-33
 
