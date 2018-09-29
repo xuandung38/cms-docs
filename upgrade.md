@@ -1,5 +1,6 @@
 # Upgrade Guide
 
+- [Upgrade To 3.2](#upgrade-3.3)
 - [Upgrade To 3.2.1](#upgrade-3.2.1)
 - [Upgrade To 3.2](#upgrade-3.2)
 - [Upgrade To 3.1](#upgrade-3.1)
@@ -13,6 +14,15 @@
 - [Upgrade To 2.2.1](#upgrade-2.2.1)
 - [Upgrade To 2.2](#upgrade-2.2)
 - [Upgrading To 2.1](#upgrade-2.1)
+
+<a name="upgrade-3.3"></a>
+## Upgrade to 3.3
+
+- This is big version. It has many change on core system so the easiest way to upgrade to new version is copy what your changes 
+(your themes, plugins, translations) to new source code.
+
+- Run `php artisan migrate`, `php artisan vendor:publish --tag=public --force`
+- Run `composer update` to update vendor packages.
 
 <a name="upgrade-3.2.1"></a>
 ## Upgrade from 3.2 to 3.2.1
