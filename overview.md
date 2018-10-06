@@ -12,7 +12,7 @@ PHP platform based on Laravel Framework 5.6
 
 Created: `07/06/2016`
 
-Current version: `3.0.2`
+Current version: `3.3`
 
 By: [Botble Technologies](https://botble.com)
 
