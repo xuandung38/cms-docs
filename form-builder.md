@@ -22,6 +22,8 @@ $this
 
 ## Form fields
 
+If you want to show form field as mandatory field, add `required` class to label attributes.
+
 ### Input fields (Text, Password, Email, Number, Textarea...)
 
 ```php
@@ -75,7 +77,7 @@ $this
 ```php
 ->add('field_name', 'customRadio', [
     'label' => __('Field label'),
-    'label_attr' => ['class' => 'control-label required'],
+    'label_attr' => ['class' => 'control-label'],
     'choices' => [
         ["option1", "Option 1"],
         ["option2", "Option 2"],
@@ -87,6 +89,24 @@ $this
 
 ```php
 ->add('field_name', 'mediaImage', [
+    'label' => __('Field label'),
+    'label_attr' => ['class' => 'control-label'],
+])
+```
+
+### Color field
+
+```php
+->add('field_name', 'color', [
+    'label' => __('Field label'),
+    'label_attr' => ['class' => 'control-label'],
+])
+```
+
+### Time field
+
+```php
+->add('field_name', 'time', [
     'label' => __('Field label'),
     'label_attr' => ['class' => 'control-label'],
 ])
