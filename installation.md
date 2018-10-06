@@ -36,7 +36,7 @@
 
 ** - Run the first test with command `php artisan serve`. Open `http://localhost:8000`, you should see home page of Botble CMS. **
 
-**- Botble should run on a virtual host. Create a virtual host like cms.local to run Botble CMS. Follow these steps to see how to config virtual host: [Setup virtual host](/3.3/virtualhost).** 
+**- Botble should run on a virtual host. Create a virtual host like cms.local to run Botble CMS. Follow these steps to see how to config virtual host: [Setup virtual host](/cms/3.3/virtualhost).** 
 
 <a name="note"></a>
 ## Note
