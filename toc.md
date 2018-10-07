@@ -11,7 +11,8 @@
     - [List packages](packages.md)
     - [Google Analytics](analytics.md)
 - Plugin development
-    - [Commands](plugin.md)
+    - [Getting started](plugin.md)
+    - [Plugin structure](plugin-structure.md)
 - Theme development
     - [Overview](theme.md)
     - [Assets](theme-assets.md)
