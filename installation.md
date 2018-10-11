@@ -28,11 +28,13 @@
 <a name="installation"></a>
 ## Installation
 
-**- Run `composer install` to download vendor packages **
+**- Run `composer install` to download vendor packages**
 
 **- Import sample database from `database.sql`**
 
 **- Create `.env` file from `.env-example` and update your configuration**
+
+**- Run `php artisan vendor:publish --tag=public --force`**
 
 ** - Run the first test with command `php artisan serve`. Open `http://localhost:8000`, you should see home page of Botble CMS. **
 
@@ -43,7 +45,7 @@
 
 This site can only be run at domain name, not folder link.
 
-On your localhost, setting virtual host. Something like `http://cms.local` is ok.
+On your localhost, setting virtual host. Something like `http://cms.local` is okay.
 
 Cannot use as `http://localhost/cms/...`.
 
