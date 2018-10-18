@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 3.3.1](#version_3_3_1)
 - [Botble 3.3](#version_3_3)
 - [Botble 3.2.1](#version_3_2_1)
 - [Botble 3.2](#version_3_2)
@@ -19,6 +20,11 @@
 - [Botble 2.1](#version_2_1)
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
+
+<a name="version_3_3_1"></a>
+## Botble 3.3.1
+### 18-10-2018
+- Hotfix: Disabled installation Botble CMS from UI because of security issues.
 
 <a name="version_3_3"></a>
 ## Botble 3.3
