@@ -1,6 +1,7 @@
 # Upgrade Guide
 
-- [Upgrade To 3.2](#upgrade-3.3)
+- [Upgrade To 3.3.1](#upgrade-3.3.1)
+- [Upgrade To 3.3](#upgrade-3.3)
 - [Upgrade To 3.2.1](#upgrade-3.2.1)
 - [Upgrade To 3.2](#upgrade-3.2)
 - [Upgrade To 3.1](#upgrade-3.1)
@@ -14,6 +15,11 @@
 - [Upgrade To 2.2.1](#upgrade-2.2.1)
 - [Upgrade To 2.2](#upgrade-2.2)
 - [Upgrading To 2.1](#upgrade-2.1)
+
+<a name="upgrade-3.3.1"></a>
+## Upgrade to 3.3.1
+
+- Override folder `core/base` with new source code.
 
 <a name="upgrade-3.3"></a>
 ## Upgrade to 3.3
