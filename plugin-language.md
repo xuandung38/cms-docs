@@ -6,6 +6,6 @@
 
 ```php
 if (defined('LANGUAGE_MODULE_SCREEN_NAME')) {
-    Language::registerModule([<YOUR_PLUGIN>_MODULE_SCREEN_NAME]);
+    \Language::registerModule([<YOUR_PLUGIN>_MODULE_SCREEN_NAME]);
 }
 ```
