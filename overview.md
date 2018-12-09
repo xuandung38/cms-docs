@@ -19,7 +19,7 @@ By: [Botble Technologies](https://botble.com)
 Email: [sangnguyenplus@gmail.com](mailto:sangnguyenplus@gmail.com)
 
 Thank you for purchasing this CMS. If you have any questions that are beyond the scope of this help file, 
-please feel free to email via my user page contact form [here](http://themeforest.net/user/botble) or via skype *live:minhsang2603* for quickly support. Thank you so much!
+please feel free to email via my user page contact form [here](http://themeforest.net/user/botble) for quickly support. Thank you so much!
 		
 <a name="demo"></a>
 ## Demo
