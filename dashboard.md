@@ -16,7 +16,7 @@ add_filter(DASHBOARD_FILTER_ADMIN_LIST, [$this, 'registerDashboardWidgets'], 122
 public function registerDashboardWidgets($widgets)
 {
     $widget = app(\Botble\Dashboard\Repositories\Interfaces\DashboardWidgetInterface::class)->firstOrCreate(['name' => 'your_widget_key_name']);
-    $widget_setting = app(\Botble\Dashboard\Repositories\Interfaces\DashboardWidgetSettingInterfac::class)->getFirstBy([
+    $widget_setting = app(\Botble\Dashboard\Repositories\Interfaces\DashboardWidgetSettingInterface::class)->getFirstBy([
         'widget_id' => $widget->id,
         'user_id' => \Auth::user()->getKey(),
     ], ['status', 'order']);
