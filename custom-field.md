@@ -55,13 +55,13 @@ foreach(get_field($page->id, PAGE_MODULE_SCREEN_NAME, 'foo_repeater') as $item) 
 **has_sub_field**: determine the parent field has sub field with the specified alias
 
 ```php
-    has_sub_field(array $parentField, $alias)
+has_sub_field(array $parentField, $alias)
 ```
 
 Example:
 ```php
-    $page = Page:find(1);
-    foreach(get_field($page->id, PAGE_MODULE_SCREEN_NAME, 'foo_repeater') as $item) {
-        $hasBar = has_sub_field($item, 'bar');
-    }
+$page = Page:find(1);
+foreach(get_field($page->id, PAGE_MODULE_SCREEN_NAME, 'foo_repeater') as $item) {
+   $hasBar = has_sub_field($item, 'bar');
+}
 ```
