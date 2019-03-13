@@ -25,6 +25,7 @@
 <a name="version_3_4"></a>
 ## Botble 3.4
 ### 15-03-2019
+- Upgraded to the latest Laravel version 5.8
 - Change folder structure: core, plugins and public/themes are now located in /platform folder.
 - Contact plugin: Allow to reply directly from admin panel.
 - Improve admin UI.
