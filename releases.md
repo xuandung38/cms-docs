@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 3.4](#version_3_4)
 - [Botble 3.3.1](#version_3_3_1)
 - [Botble 3.3](#version_3_3)
 - [Botble 3.2.1](#version_3_2_1)
@@ -20,6 +21,15 @@
 - [Botble 2.1](#version_2_1)
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
+
+<a name="version_3_4"></a>
+## Botble 3.4
+### 15-03-2019
+- Change folder structure: core, plugins and public/themes are now located in /platform folder.
+- Contact plugin: Allow to reply directly from admin panel.
+- Improve admin UI.
+- Move some plugins to packages. Now we have a new folder is /platform/packages (it is the place for required plugins).
+- Theme's directory is now located in /platform/themes/your-theme so it can't access directly anymore. After make change on theme's assets, you will need to run command `php artisan cms:theme:assets:publish your-theme` to copy assets to /public/themes/your-themes.
 
 <a name="version_3_3_1"></a>
 ## Botble 3.3.1
