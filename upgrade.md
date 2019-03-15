@@ -28,6 +28,8 @@
 
 - Run `composer install` and `php artisan migrate`
 
+- Run command `php artisan storage:link`
+
 
 <a name="upgrade-3.3.1"></a>
 ## Upgrade to 3.3.1
