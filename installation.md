@@ -35,7 +35,7 @@
 **- Create `.env` file from `.env-example` and update your configuration**
 
 **- Run `php artisan vendor:publish --tag=public --force`**
-**- Run `php artisan storage:link` 
+**- Run `php artisan storage:link`**
 
 ** - Run the first test with command `php artisan serve`. Open `http://localhost:8000`, you should see home page of Botble CMS. **
 
