@@ -23,7 +23,7 @@
 - Module Re_write server
 - PHP_CURL Module Enable
 
->  {warning} On this project, I use the latest Laravel version (currently 5.6). Please go to [Laravel documentation page](https://laravel.com/docs) for more information.
+>  {warning} On this project, I use the latest Laravel version (currently 5.8). Please go to [Laravel documentation page](https://laravel.com/docs) for more information.
 
 <a name="installation"></a>
 ## Installation
@@ -35,11 +35,14 @@
 **- Create `.env` file from `.env-example` and update your configuration**
 
 **- Run `php artisan vendor:publish --tag=public --force`**
+
+**- Run `php artisan cms:theme:assets:publish ripple`**
+
 **- Run `php artisan storage:link`**
 
 ** - Run the first test with command `php artisan serve`. Open `http://localhost:8000`, you should see home page of Botble CMS. **
 
-**- Botble should run on a virtual host. Create a virtual host like cms.local to run Botble CMS. Follow these steps to see how to config virtual host: [Setup virtual host](/cms/3.3/virtualhost).** 
+**- Botble should run on a virtual host. Create a virtual host like cms.local to run Botble CMS. Follow these steps to see how to config virtual host: [Setup virtual host](/cms/3.4/virtualhost).** 
 
 <a name="note"></a>
 ## Note
