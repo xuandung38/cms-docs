@@ -42,10 +42,12 @@
 
 **- Run `php artisan storage:link`**
 
-** - Run the first test with command `php artisan serve`. Open `http://localhost:8000`, you should see home page of Botble CMS. **
+**- Run the first test with command `php artisan serve`. **
+
+**- Open `http://localhost:8000`, you should see home page of Botble CMS**
 
 
-* If you need sample data, you can import it from `database.sql`*
+** If you need sample data, you can import it from `database.sql`**
 
 ** Botble should run on a virtual host. Create a virtual host like cms.local to run Botble CMS. Follow these steps to see how to config virtual host: [Setup virtual host](/cms/3.4/virtualhost).** 
 
