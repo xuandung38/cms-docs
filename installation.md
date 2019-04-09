@@ -42,7 +42,7 @@
 
 **- Run `php artisan storage:link`**
 
-**- Run the first test with command `php artisan serve`. **
+**- Run the first test with command `php artisan serve`**
 
 **- Open `http://localhost:8000`, you should see home page of Botble CMS**
 
