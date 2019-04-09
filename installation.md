@@ -28,21 +28,21 @@
 <a name="installation"></a>
 ## Installation
 
-**- Run `composer install` to download vendor packages**
+* Run `composer install` to download vendor packages
 
-**- Create `.env` file from `.env-example` and update your configuration**
+* Create `.env` file from `.env-example` and update your configuration
 
-**- Run `php artisan migrate` to create database structure**
+* Run `php artisan migrate` to create database structure
 
-**- Run `php artisan cms:user:create` to create admin user**
+* Run `php artisan cms:user:create` to create admin user
 
-**- Run `php artisan vendor:publish --tag=public --force`**
+* Run `php artisan vendor:publish --tag=public --force`
 
-**- Run `php artisan cms:theme:assets:publish ripple`**
+* Run `php artisan cms:theme:assets:publish ripple`
 
-**- Run `php artisan storage:link`**
+* Run `php artisan storage:link`
 
-**- Run the first test with command `php artisan serve`. Open `http://localhost:8000`, you should see home page of Botble CMS**
+* Run the first test with command `php artisan serve`. Open `http://localhost:8000`, you should see home page of Botble CMS
 
 
 **If you need sample data, you can import it from `database.sql`**
