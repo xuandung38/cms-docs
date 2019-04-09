@@ -8,11 +8,11 @@
 <a name="introduction"></a>
 ## Introduction
 
-PHP platform based on Laravel Framework 5.6
+PHP platform based on Laravel Framework 5.8
 
 Created: `07/06/2016`
 
-Current version: `3.3`
+Current version: `3.4`
 
 By: [Botble Technologies](https://botble.com)
 
