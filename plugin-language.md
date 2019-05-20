@@ -21,7 +21,7 @@ Add to your theme views.
 
 ### Customize swicher.
 
-If you want to custom language swicher, you can use this html instead of using `apply_filters`. It's located in `platform/plugins/language/resources/views/partials/switcher.blade.php`
+If you want to custom language swicher, you can modify this file: `platform/plugins/language/resources/views/partials/switcher.blade.php`
 
 ```
 @if ($supported_locales)
