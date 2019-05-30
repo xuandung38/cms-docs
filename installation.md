@@ -36,7 +36,7 @@
 
 * Run `php artisan cms:user:create` to create admin user
 
-* Run `php artisan vendor:publish --tag=public --force`
+* Run `php artisan vendor:publish --tag=cms-public --force`
 
 * Run `php artisan cms:theme:assets:publish ripple`
 
