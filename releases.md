@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 3.5](#version_3_5)
 - [Botble 3.4](#version_3_4)
 - [Botble 3.3.1](#version_3_3_1)
 - [Botble 3.3](#version_3_3)
@@ -21,6 +22,20 @@
 - [Botble 2.1](#version_2_1)
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
+
+<a name="version_3_4"></a>
+## Botble 3.4
+### 30-05-2019
+- Restructure asset files.
+- Fix security issue in upload user's avatar.
+- Change default value for `status` column to `published` instead of `publish`.
+- Create `dev-tool` package.
+- Change binding type for repositories from `singleton` to `bind`.
+- Remove `@author` in comment docs.
+- Fix language issue.
+- Fix dashboard widgets.
+- Allow to create user without role.
+- Refactor, clean migrations.
 
 <a name="version_3_4"></a>
 ## Botble 3.4
