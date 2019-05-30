@@ -23,8 +23,8 @@
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
 
-<a name="version_3_4"></a>
-## Botble 3.4
+<a name="version_3_5"></a>
+## Botble 3.5
 ### 30-05-2019
 - Restructure asset files.
 - Fix security issue in upload user's avatar.
