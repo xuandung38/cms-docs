@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 3.5.1](#version_3_5_1)
 - [Botble 3.5](#version_3_5)
 - [Botble 3.4](#version_3_4)
 - [Botble 3.3.1](#version_3_3_1)
@@ -22,6 +23,19 @@
 - [Botble 2.1](#version_2_1)
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
+
+<a name="version_3_5_1"></a>
+## Botble 3.5.1
+### 25-06-2019
+
+- Hotfix delete language.
+
+Add this line into `platform/plugins/language/resources/views/index.blade.php:191`
+```
+@include('core/table::modal')
+```
+
+http://prntscr.com/o66h4x
 
 <a name="version_3_5"></a>
 ## Botble 3.5
