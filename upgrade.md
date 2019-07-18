@@ -25,7 +25,7 @@
 - Remove folder `public/vendor/core` and run command `php artisan vendor:publish --tag=cms-public --force`
 - Run `composer install` to update vendor packages.
 - Run `php artisan migrate` to update database.
-- Change method of delete pages, posts, categories... to `DELETE`, you need to change in your plugin /routes/web.php
+- Change method of delete pages, posts, categories... to `DELETE` (http://prntscr.com/ogug1p), you need to change in your plugin /routes/web.php
 
 ```php
 Route::get('delete/{id}', ...
