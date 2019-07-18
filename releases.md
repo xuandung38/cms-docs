@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 3.6](#version_3_6)
 - [Botble 3.5.1](#version_3_5_1)
 - [Botble 3.5](#version_3_5)
 - [Botble 3.4](#version_3_4)
@@ -23,6 +24,18 @@
 - [Botble 2.1](#version_2_1)
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
+
+<a name="version_3_6"></a>
+## Botble 3.6
+### 20-07-2019
+
+- Fix bug repeater field with image, file in custom fields plugin.
+- Move plugin management into /packages. Now it's a optional feature, you can remove `botble/plugin-management` and run composer update to remove plugin feature.
+- Add command to regenerate image sizes: `php artisan cms:media:thumnail:generate`.
+- Add default theme options: site title, SEO meta tags.
+- Add search box on tables.
+- Update translations.
+- Optimize performance & refactor code.
 
 <a name="version_3_5_1"></a>
 ## Botble 3.5.1
