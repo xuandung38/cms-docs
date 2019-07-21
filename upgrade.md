@@ -26,6 +26,7 @@
 - Update your  composer.json   with the latest  composer.json   or update changes from latest version http://prntscr.com/ohvwfw.
 - Run `composer update` to update vendor packages.
 - Run `php artisan migrate` to update database.
+- Replace all `public.index` to `public.single`.
 - Change method of delete pages, posts, categories... to `DELETE` (http://prntscr.com/ohvrw0), you need to change in your plugin /routes/web.php
 
 ```php
