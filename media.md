@@ -41,3 +41,13 @@ How to use:
     {{ get_image_url($post->image, 'post-small') }}
     {{ get_object_image($post->image, 'post-small') }}
 ```
+
+## Custom upload
+
+You can create your custom upload with `RvMedia` facade.
+
+Ex:
+
+```
+\RvMedia::handleUpload(request()->input('file'), 0, 'your-folder`);
+```
