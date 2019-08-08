@@ -19,7 +19,7 @@ Example:
     "namespace": "Botble\\Demo\\",
     "provider": "Botble\\Demo\\Providers\\DemoServiceProvider",
     "author": "Sang Nguyen",
-    "url": "http://sangnguyen.info",
+    "url": "https://sangnguyen.info",
     "version": "1.0",
     "description": "The description for plugin demo"
 }

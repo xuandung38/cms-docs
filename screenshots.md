@@ -7,7 +7,7 @@ Dashboard with Google Analytics, recent posts, error logs...
 
 ### 2/ CRUD
 
-![Edit Page](http://docs.botble.com/uploads/screenshots/edit-page.png)
+![Edit Page](https://docs.botble.com/uploads/screenshots/edit-page.png)
 
 ### 3/ Theme
 2 themes already now.
@@ -16,7 +16,7 @@ Dashboard with Google Analytics, recent posts, error logs...
 
 ### 4/ Menu
 
-![Menu](http://docs.botble.com/uploads/screenshots/menu.png)
+![Menu](https://docs.botble.com/uploads/screenshots/menu.png)
 
 
 ### 5/ Widget

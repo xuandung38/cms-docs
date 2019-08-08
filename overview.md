@@ -19,14 +19,14 @@ By: [Botble Technologies](https://botble.com)
 Email: [sangnguyenplus@gmail.com](mailto:sangnguyenplus@gmail.com)
 
 Thank you for purchasing this CMS. If you have any questions that are beyond the scope of this help file, 
-please feel free to email via my user page contact form [here](http://themeforest.net/user/botble) for quickly support. Thank you so much!
+please feel free to email via my user page contact form [here](https://themeforest.net/user/botble) for quickly support. Thank you so much!
 		
 <a name="demo"></a>
 ## Demo
 
-Homepage: [http://cms.botble.com](http://cms.botble.com)
+Homepage: [https://cms.botble.com](https://cms.botble.com)
 
-Admin Area: [http://cms.botble.com/admin](http://cms.botble.com/admin)
+Admin Area: [https://cms.botble.com/admin](https://cms.botble.com/admin)
 
 Username: `botble`
 
