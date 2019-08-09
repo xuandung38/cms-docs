@@ -1,5 +1,6 @@
 # Release Notes
 
+- [Botble 3.6.1](#version_3_6_1)
 - [Botble 3.6](#version_3_6)
 - [Botble 3.5.1](#version_3_5_1)
 - [Botble 3.5](#version_3_5)
@@ -24,6 +25,15 @@
 - [Botble 2.1](#version_2_1)
 - [Botble 2.0](#version_2_0)
 - [Botble 1.0](#version_1_0)
+
+<a name="version_3_6_1"></a>
+## Botble 3.6.1
+### 10-08-2019
+
+- Fix bug delete widget.
+- Fix bug search users.
+- Refactor code.
+- Improve performance.
 
 <a name="version_3_6"></a>
 ## Botble 3.6
