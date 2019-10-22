@@ -79,7 +79,7 @@ function post_additional_fields()
     $video_link = null;
     $args = func_get_args();
     if (!empty($args[0])) {
-        $video_link = get_meta_data($args[0]->id, 'video_link', $args[1], true);
+        $video_link = get_meta_data($args[0], 'video_link', true);
     }
     return Theme::partial('post-fields', compact('video_link'));
 }
@@ -107,7 +107,7 @@ add_action(BASE_ACTION_AFTER_UPDATE_CONTENT, 'save_addition_post_fields', 231, 3
 function save_addition_post_fields($type, $request, $object)
 {
     if (is_plugin_active('blog') && $type == POST_MODULE_SCREEN_NAME) {
-        save_meta_data($object->id, 'video_link', $request->input('video_link'), $type);
+        save_meta_data($object, 'video_link', $request->input('video_link'));
     }
 }
 ```
@@ -131,7 +131,7 @@ function post_additional_fields()
     $video_link = null;
     $args = func_get_args();
     if (!empty($args[0])) {
-        $video_link = get_meta_data($args[0]->id, 'video_link', $args[1], true);
+        $video_link = get_meta_data($args[0], 'video_link', true);
     }
     return Theme::partial('post-fields', compact('video_link'));
 }
@@ -142,7 +142,7 @@ add_action(BASE_ACTION_AFTER_UPDATE_CONTENT, 'save_addition_post_fields', 231, 3
 function save_addition_post_fields($type, $request, $object)
 {
     if (is_plugin_active('blog') && $type == POST_MODULE_SCREEN_NAME) {
-        save_meta_data($object->id, 'video_link', $request->input('video_link'), $type);
+        save_meta_data($object, 'video_link', $request->input('video_link'));
     }
 }
 ```
