@@ -3,11 +3,11 @@
 All plugins are registered to Composer autoloader manually. It needs a `plugin.json` file to provide all needed information
 for auto loading.
 
-![Image](https://botble.com/uploads/1/docs/plugin-structure.jpg)
+![Image](https://botble.com/storage/uploads/1/docs/plugin-structure.jpg)
 
 A basic plugin structure.
 
-![Image](https://botble.com/uploads/1/docs/sample-plugin.png)
+![Image](https://botble.com/storage/uploads/1/docs/sample-plugin.png)
 
 - `plugin.json`: All information about this plugin.
 
