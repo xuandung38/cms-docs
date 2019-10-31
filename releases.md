@@ -28,7 +28,7 @@
 
 <a name="version_4_0"></a>
 ## Botble 4.0
-### xx-xx-2019
+### 31-10-2019
 
 - Upgraded to Laravel 6.0. Now this CMS requires PHP >=7.2 (https://laravel.com/docs/6.0#server-requirements)
 
