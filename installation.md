@@ -42,6 +42,9 @@
 
 * Run `php artisan storage:link`
 
+Note: If you can't run `php artisan storage:link` (some hosting doesn't support it), you can change config
+in `/config/filesystems.php` like this https://prnt.sc/pn50dc then move all uploaded file from `/storage/app/public` to `/public/storage`.
+
 * Run the first test with command `php artisan serve`. Open `http://localhost:8000`, you should see home page of Botble CMS
 
 
