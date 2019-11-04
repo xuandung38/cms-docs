@@ -23,7 +23,7 @@
 - Module Re_write server
 - PHP_CURL Module Enable
 
->  {warning} On this project, I use the latest Laravel version (currently 5.8). Please go to [Laravel documentation page](https://laravel.com/docs) for more information.
+>  {warning} On this project, I use the latest Laravel version (currently 6.x). Please go to [Laravel documentation page](https://laravel.com/docs) for more information.
 
 <a name="installation"></a>
 ## Installation
