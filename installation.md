@@ -6,7 +6,7 @@
 <a name="requirement"></a>
 ## Requirement
 
-**We recommend to use Ampps (https://www.ampps.com) instead of Xampp to create develop environment. With Ampps, you can easy to add/manage virtual domain like cms.local https://www.youtube.com/watch?v=F1CaiR3L9FQ**
+**We recommend to use MAMP PRO (https://www.mamp.info/en/) instead of Xampp to create develop environment. With MAMP, you can easy to add/manage virtual domain like cms.local.**
 
 - Apache, nginx, or another compatible web server.
 - PHP >= 7.2 >> Higher
