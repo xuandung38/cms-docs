@@ -116,6 +116,19 @@ To
 Route::delete('delete-many', ...
 ```
 
+- Update in your plugin's controllers, remove screen name from `BeforeEditContentEvent`:
+Change
+
+```php
+event(new BeforeEditContentEvent({PLUGIN}_MODULE_SCREEN_NAME, $request, $data));
+```
+
+To 
+
+```php
+event(new BeforeEditContentEvent($request, $data));
+```
+
 <a name="upgrade-3.5"></a>
 ## Upgrade to 3.5
 - Override folder `platform` from the update source code.
