@@ -23,7 +23,7 @@ get_field($id, $screenName, $alias = null, $default = null)
 
 Example:
 ```php
-$page = Page:find(1);
+$page = \Botble\Page\Models\Page::find(1);
 $field = get_field($page->id, PAGE_MODULE_SCREEN_NAME, 'foo');
 ```
 
@@ -34,7 +34,7 @@ function has_field($id, $screenName, $alias = null)
 
 Example:
 ```php
-$page = Page:find(1);
+$page = \Botble\Page\Models\Page::find(1);
 $hasField = has_field($page->id, PAGE_MODULE_SCREEN_NAME, 'foo');
 ```
 
@@ -46,7 +46,7 @@ get_sub_field(array $parentField, $alias, $default = null)
 
 Example:
 ```php
-$page = Page:find(1);
+$page = \Botble\Page\Models\Page::find(1);
 foreach(get_field($page->id, PAGE_MODULE_SCREEN_NAME, 'foo_repeater') as $item) {
    $childField = get_sub_field($item, 'bar');
 }
@@ -60,7 +60,7 @@ has_sub_field(array $parentField, $alias)
 
 Example:
 ```php
-$page = Page:find(1);
+$page = \Botble\Page\Models\Page::find(1);
 foreach(get_field($page->id, PAGE_MODULE_SCREEN_NAME, 'foo_repeater') as $item) {
    $hasBar = has_sub_field($item, 'bar');
 }
